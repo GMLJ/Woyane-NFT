@@ -578,8 +578,8 @@ button:hover,
 
 @media (min-width: 64.1em) {
   .article__grid {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -614,11 +614,6 @@ button:hover,
   .article__text {
     padding: 1.875rem 1.5625rem;
   }
-}
-
-.article__author {
-  font-size: 0.625rem;
-  padding-bottom: 0.75rem;
 }
 
 .article__title {
