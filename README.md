@@ -2,7 +2,7 @@
 
 ## ℹ️ &nbsp; About Woyane NFT
 
-Woyane NFT is decentralized finance at the service of those fighting for freedom.
+Woyane NFT is decentralized Art at the service of those fighting for freedom.
 </br>
 When people gather all over the world to demand to be heard, they provide an option for raising funds, raising awareness, and pushing back against injustice.
 </br>
