@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -18,50 +17,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/app/scss/style.css" />
-    <title>Woyane DeFi landing page</title>
+    <title>Woyane NFT landing page</title>
   </head>
 
   <body>
     <header class="header">
-      <div class="overlay has-fade"></div>
-      <nav class="flex flex-jc-sb flex-ai-c">
         <a href="/" class="header__logo">
           <img
             src="images/WoyaneLogo.png"
-            alt="Woyane DeFi Logo"
+            alt="Woyane NFT Logo"
           />
         </a>
-        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-        <div class="header__links hide-for-mobile">
-          <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </div>
-        <button type="button" class="button hide-for-mobile">DONATE</button>
-      </nav>
-
-      <div class="header__menu has-fade">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Blog</a>
-        <a href="">Careers</a>
+        <div class="announcement">
+        <h1><span class="a1"> 1st batch of NFTs coming soon - </span><span class="a2"> 1st batch of NFTs coming soon - </span></h1>
       </div>
+        <button type="button" class="button">DONATE</button>
     </header>
 
     <section class="hero">
       <div class="containerHero">
 
-        <div class="hero__text containerInside">
-          <h1 class="woyane">WOYANE DeFi</h1>
+        <div class="containerInside">
+          <h1 class="woyane">WOYANE NFT</h1>
           <p>
-            is decentralized finance at the service of those
+            is Digital Art at the service of those
             <strong style="color: #dc332e">fighting for freedom</strong>. When
             people gather all over the world to demand to be heard, we provide
             an option for raising funds, raising awareness, and pushing back
@@ -70,7 +49,7 @@
         </div>
 
         <div class="women">
-          <svg width="772" height="485" viewBox="0 0 772 485" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="60vw" height="100%" viewBox="0 0 772 485" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="women-portrait" clip-path="url(#clip0)">
               <rect id="Rectangle-women" width="772" height="300" fill="#FAFAFA" />
               <g id="women-layer">
@@ -131,8 +110,7 @@
     </section>
 
     <section class="feature">
-      <div class="feature__content container container--pAll">
-        <div class="feature__grid">
+      <div class="feature__content">
           <div class="feature__item">
             <div class="feature__icon">
               <img src="/images/icon-online.svg" alt="" />
@@ -151,22 +129,12 @@
             </div>
             <div class="feature__title">Crypto Fund Raising</div>
             <div class="feature__description">
-              Raise funds for the the causes we support through Woyane DeFi.<br /><br />
+              Raise funds for the the causes we support through Woyane NFT.<br /><br />
               If you would like to donate your cryptos please look at the few
               NGOs we currently support who are helping innocent people
               suffering through the Genocidal war in Tigray.
             </div>
           </div>
-          <!-- <div class="feature__item">
-            <div class="feature__icon">
-              <img src="/images/icon-onboarding.svg" alt="" />
-            </div>
-            <div class="feature__title">Fast Onboarding</div>
-            <div class="feature__description">
-              We don’t do branches. Open your account in minutes online and
-              start taking control of your finances right away.
-            </div>
-          </div> -->
           <div class="feature__item">
             <div class="feature__icon">
               <img src="/images/icon-api.svg" alt="" />
@@ -179,7 +147,6 @@
               action for people. Join our next discussion.
             </div>
           </div>
-        </div>
       </div>
     </section>
 
@@ -2487,7 +2454,7 @@
       </div>
     </section>
     
-    <section class="articles container--pAll">
+    <section class="articles">
       <h1>Projects</h1>
       <p style="padding-left:5%;">The organisations we raise funds for:</p>
       <div class="article__grid">
@@ -2536,30 +2503,16 @@
           </div>
         </a>
 
-        <!-- <a href="#" class="article__item">
-          <div
-            class="article__image"
-            style="background-image: url('')"
-          ></div>
-          <div class="article__text">
-            <div class="article__author">------------</div>
-            <div class="article__title">
-              ----------------------------
-            </div>
-            <div class="article__description">
-              ----------------------------------------------------------------------------------------------------------------
-            </div>
-          </div>
-        </a> -->
       </div>
     </section>
 
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
+        <div class="logoSocialsContainer">
         <a href="#" class="footer__logo">
           <img
             src="images/WoyaneLogo.png"
-            alt="Woyane DeFi"
+            alt="Woyane NFT"
           />
         </a>
 
@@ -2575,33 +2528,6 @@
           </a>
           <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
-              <title>Youtube</title>
-              <path
-                fill="#FFF"
-                d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
-              <title>Twitter</title>
-              <path
-                fill="#FFF"
-                d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-              <title>Pinterest</title>
-              <path
-                fill="#FFF"
-                d="M10 0C4.478 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.545 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.522 0 10-4.477 10-10S15.522 0 10 0z"
-              />
-            </svg>
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
               <title>Instagram</title>
               <path
                 fill="#FFF"
@@ -2609,21 +2535,22 @@
               />
             </svg>
           </a>
+          <a href="#">
+              <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+                <title>Mail.Ru</title>
+                <path 
+                fill="#FFF"
+                d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12"/></svg>
+          </a>
         </div>
-
-        <div class="footer__links">
-          <a href="">Home</a>
-          <a href="">Projects</a>
-          <a href="">Blog</a>
-          <a href="">Contact</a>
-        </div>
+      </div>
 
         <div class="footer__cta">
           <a href="" class="button">DONATE</a>
         </div>
 
         <div class="footer__copyright">
-          &copy; Woyane DeFi. All Rights Reserved. 2021.
+          &copy; Woyane NFT. All Rights Reserved. 2021.
         </div>
       </div>
     </footer>

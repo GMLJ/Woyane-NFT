@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
 
   &__container {
     display: flex;
@@ -15,14 +16,12 @@
     }
   }
   & h1 {
-    font-size: 52px;
     z-index: 15;
     @include breakpoint-down(medium) {
       text-align: center;
     }
   }
   & p {
-    font-size: 24px;
     z-index: 15;
 
     @include breakpoint-down(medium) {

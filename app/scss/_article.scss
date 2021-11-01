@@ -1,6 +1,7 @@
 .articles {
   background-color: $VeryLightGray;
   text-align: center;
+  padding: 5rem 2rem;
   @include breakpoint-up(medium) {
     text-align: left;
   }

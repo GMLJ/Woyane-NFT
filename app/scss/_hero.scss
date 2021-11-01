@@ -1,83 +1,91 @@
-.containerHero {
-  display: flex;
-}
-
 .hero {
-  background-color: $VeryLightGray;
+  margin-top: 8vh;
+  .containerHero {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    background-color: $VeryLightGray;
 
-  .containerInside {
-    margin-left: 10%;
-    z-index: 10;
-    @include breakpoint-up(large) {
+    @include breakpoint-down(medium) {
+      font-size: 1rem;
+    }
+    @include breakpoint-down(small) {
       display: flex;
+      flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
     }
-  }
-
-  &__text {
-    text-align: justify;
-
-    @include breakpoint-up(large) {
+    .containerInside {
       flex-direction: column;
-      order: 1;
-      text-align: left;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 5rem;
+      @include breakpoint-down(medium) {
+        padding: 2rem 0 0 5rem;
+      }
+      @include breakpoint-down(small) {
+        padding: 2rem 1rem 0 1rem;
+      }
     }
   }
-}
-.women {
-  flex-direction: column;
-  order: 2;
-  transform-origin: top;
-  transform: scale(1.4);
-  z-index: 5;
-}
+  .women {
+    transform-origin: top;
+    z-index: 5;
+    @include breakpoint-down(medium) {
+      width: 100vw;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 
-#women-orange {
-  animation: clrOrange 4s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-#women-red {
-  animation: clrRed 4s ease-in-out infinite alternate;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-#women-yellow {
-  animation: clrYellow 4s ease-in-out infinite alternate;
-}
-#women-white {
-  animation: clrWhite 4s ease-in-out infinite alternate;
-}
-@keyframes clrOrange {
-  from {
-    transform: translateY(0%) rotateZ(0deg);
+  #women-orange {
+    animation: clrOrange 4s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
   }
-  to {
-    transform: translateY(-1%) rotateZ(1deg);
+  #women-red {
+    animation: clrRed 4s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
   }
-}
-@keyframes clrRed {
-  from {
-    transform: translateY(0%) rotateZ(0deg);
+  #women-yellow {
+    animation: clrYellow 4s ease-in-out infinite alternate;
   }
-  to {
-    transform: translateY(1%) rotateZ(-1deg);
+  #women-white {
+    animation: clrWhite 4s ease-in-out infinite alternate;
   }
-}
-@keyframes clrYellow {
-  from {
-    transform: translateY(0%);
+  @keyframes clrOrange {
+    from {
+      transform: translateY(0%) rotateZ(0deg);
+    }
+    to {
+      transform: translateY(-1%) rotateZ(1deg);
+    }
   }
-  to {
-    transform: translateY(-1%);
+  @keyframes clrRed {
+    from {
+      transform: translateY(0%) rotateZ(0deg);
+    }
+    to {
+      transform: translateY(1%) rotateZ(-1deg);
+    }
   }
-}
-@keyframes clrWhite {
-  from {
-    transform: translateY(0%);
+  @keyframes clrYellow {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(-1%);
+    }
   }
-  to {
-    transform: translateY(1%);
+  @keyframes clrWhite {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(1%);
+    }
   }
 }
